@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  p This tool convert a file path from windows format to macosx.
+  p original:
+  <input type="text" name="message" id="message">
+  <input type="submit" id="submit" value="parse">
+  p converted:
+  textarea#parsed
